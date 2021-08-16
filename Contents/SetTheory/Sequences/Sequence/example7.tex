@@ -42,18 +42,27 @@ $n$
 $n$
 جمله‌ی نخست دنباله را به صورت زیر به‌دست می‌آوریم.
 ابتدا جمع کل را می‌نویسیم:
-$$S_n = a_1 + a_2 + a_3 + \cdots + a_n$$
-$$S_n = a_1 + a_1q + a_1q^2 + \cdots + a_1q^{n}$$
+\begin{align*}
+    S_n &= a_1 + a_2 + a_3 + \cdots + a_n\\
+    S_n &= a_1 + a_1q + a_1q^2 + \cdots + a_1q^{n - 1}    
+\end{align*}
+% $$S_n = a_1 + a_2 + a_3 + \cdots + a_n$$
+% $$S_n = a_1 + a_1q + a_1q^2 + \cdots + a_1q^{n - 1}$$
 حال
 $S_n$
 را در
 $q$
 ضرب می‌کنیم:
-$$S_nq = a_1q + a_1q^2 + a_1q^3 + \cdots + a_1q^{n - 1}$$
+$$S_nq = a_1q + a_1q^2 + a_1q^3 + \cdots + a_1q^{n}$$
 اکنون این دو عبارت را از هم کم کرده و با فاکتورگیری حاصل را به‌دست می‌آوریم:
-$$S_n - S_nq = a_1 - a_1q^n$$
-$$S_n(1 - q) = a_1(1 - q^{n})$$
-$$S_n = \frac{a_1(1 - q^{n})}{1 - q}$$
+\begin{align*}
+    S_n - S_nq &= a_1 - a_1q^n\\
+    S_n(1 - q) &= a_1(1 - q^{n})\\
+    S_n &= \frac{a_1(1 - q^{n})}{1 - q}        
+\end{align*}
+% $$S_n - S_nq = a_1 - a_1q^n$$
+% $$S_n(1 - q) = a_1(1 - q^{n})$$
+% $$S_n = \frac{a_1(1 - q^{n})}{1 - q}$$
     }
 \end{PROBLEM}
     \begin{THEOREM}
@@ -78,8 +87,12 @@ $$S_n = a_1\frac{q^n - 1}{q - 1}$$
         درنظر بگیرید.
         مجموع $n$
         جمله‌ی اول این دنباله برابر است با:
-        $$S_{n} = 1 + a + a^2 + \cdots + a^{n-1} = 1 \times \frac{a^n - 1}{a - 1}$$
-        $$=> a^n - 1 = (a-1)(a^{n-1} + a^{n-2} + \cdots + a + 1)$$
+        \begin{align*}
+            S_{n} &= 1 + a + a^2 + \cdots + a^{n-1} = 1 \times \frac{a^n - 1}{a - 1}\\
+            &=> a^n - 1 = (a-1)(a^{n-1} + a^{n-2} + \cdots + a + 1)    
+        \end{align*}
+        % $$S_{n} = 1 + a + a^2 + \cdots + a^{n-1} = 1 \times \frac{a^n - 1}{a - 1}$$
+        % $$=> a^n - 1 = (a-1)(a^{n-1} + a^{n-2} + \cdots + a + 1)$$
             }
 \end{PROBLEM}
         \begin{THEOREM}
