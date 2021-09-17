@@ -11,27 +11,33 @@
 
   \SOLUTION[پاسخ با تعمیم اتحاد پاسکال]{
     \p
-  طبق اتحاد پاسکال می‌دانیم:
-    $$\binom{n-1}{r-1} + \binom{n-1}{r} = \binom{n}{r} \Rightarrow \binom{n-1}{r-1} = \binom{n}{r} - \binom{n-1}{r}$$
-    $$\binom{j}{r} = \binom{j+1}{r+1} - \binom{j}{r+1}$$
-    پس:
-    $$\binom{r}{r} = \binom{r+1}{r+1} - \binom{r}{r+1}$$
-    $$\binom{r+1}{r} = \binom{r+1+1}{r+1} - \binom{r+1}{r+1}$$
-    $$\binom{r+2}{r} = \binom{r+2+1}{r+1} - \binom{r+2}{r+1}$$
-    $$\vdots$$
-    $$\binom{n-1}{r} = \binom{n-1+1}{r+1} - \binom{n-1}{r+1}$$
-    $$\binom{n}{r} = \binom{n+1}{r+1} - \binom{n}{r+1}$$
-    \begin{center}
-		$\rule{0.4\textwidth}{0.8pt}$
-		\Huge{+}
-	\end{center}
-	$$\sum\limits_{j=r}^n \binom{j}{r} = \binom{n+1}{r+1}$$
-    
+      طبق 
+      \CROSSREF[اتحاد پاسکال]{اتحاد پاسکال برای اعداد حسابی}
+       می‌دانیم:
+      \begin{align*}
+        &&& \binom{n-1}{r-1} + \binom{n-1}{r} &&=&& \binom{n}{r} \\
+        &\Rightarrow&& \binom{n-1}{r-1} &&=&& \binom{n}{r} - \binom{n-1}{r}\\
+        &\Rightarrow&& \binom{j}{r} &&=&& \binom{j+1}{r+1} - \binom{j}{r+1}
+      \end{align*}
+      پس:
+      \begin{align*}
+        \binom{r}{r} &= \binom{r+1}{r+1} &&-&& \binom{r}{r+1}\\
+        \binom{r+1}{r} &= \binom{r+1+1}{r+1} &&-&& \binom{r+1}{r+1}\\
+        \binom{r+2}{r} &= \binom{r+2+1}{r+1} &&-&& \binom{r+2}{r+1}\\
+        &\vdots\\
+        \binom{n-1}{r} &= \binom{n-1+1}{r+1} &&-&& \binom{n-1}{r+1}\\
+        \binom{n}{r} &= \binom{n+1}{r+1} &&-&& \binom{n}{r+1}\\
+        \Huge{+} \rule{0.15\textwidth}{0.8pt} &\rule{0.55\textwidth}{0.8pt} \span\span\span\span\span\span\span\span \\
+        \sum\limits_{j=r}^n \binom{j}{r} &= \binom{n+1}{r+1} 
+      \end{align*}
+
   }
     
   \SOLUTION[پاسخ از روش دوگانه شماری]{
       \p
-      از دوگانه شماری استفاده می‌کنیم. می‌خواهیم یک رشته باینری به طول
+      از 
+      \CROSSREF[دوگانه شماری]{توضیح روش ترکیبیاتی دوگانه شماری}
+       استفاده می‌کنیم. می‌خواهیم یک رشته باینری به طول
       $n+1$
       حاوی
       $r+1$
@@ -74,7 +80,9 @@
       $1$
       بودن هستیم که به
       $\binom{j}{r}$
-      حالت صورت می‌گیرد. حال برای رسیدن به جواب مسئله، طبق اصل جمع، باید
+      حالت صورت می‌گیرد. حال برای رسیدن به جواب مسئله، طبق 
+      \CROSSREF[اصل جمع]{اصل جمع در آنالیز ترکیبی}
+      ، باید
       تعداد حالات ساختن رشته را به ازای تمام مقادیر ممکن
       $j$
       با هم جمع کنیم. بنابراین پاسخ مسئله برابر است با :
@@ -88,6 +96,7 @@
 \end{PROBLEM}
 
 \begin{THEOREM}
+  \TARGET{اتحاد چوشی‌چی برای اعداد حسابی}
   \p
   فرض کنیم
   $n,r$

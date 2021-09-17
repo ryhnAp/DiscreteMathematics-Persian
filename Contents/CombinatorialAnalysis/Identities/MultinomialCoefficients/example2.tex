@@ -10,7 +10,9 @@
 
     \SOLUTION[\REF{R} پاسخ]{
       \p
-      با توجه به برقرار بودن شرط قضیه ضرایب دوجمله‌ای، از آن استفاده می‌کنیم:
+      با توجه به برقرار بودن شرط 
+      \CROSSREF[قضیه ضرایب دو جمله‌ای]{قضیه ضرایب دوجمله‌ای برای اعداد صحیح}
+      ، از آن استفاده می‌کنیم:
         $$2^n = (1+1)^n = \sum\limits_{k=0}^{n} \binom{n}{k} 1^k 1^{n-k} = \sum\limits_{k=0}^{n} \binom{k}{n}$$
     }
 
@@ -22,7 +24,9 @@
 
     \SOLUTION[\REF{R} پاسخ]{
       \p
-      با توجه به برقرار بودن شرط قضیه ضرایب دوجمله‌ای، از آن استفاده می‌کنیم:
+      با توجه به برقرار بودن شرط 
+      \CROSSREF[قضیه ضرایب دو جمله‌ای]{قضیه ضرایب دوجمله‌ای برای اعداد صحیح}
+      ، از آن استفاده می‌کنیم:
         $$0 = 0^n = ((-1)+1)^n = \sum\limits_{k=0}^{n} \binom{n}{k} (-1)^k 1^{n-k} = \sum\limits_{k=0}^{n} \binom{n}{k} (-1)^k$$
     }
 
@@ -35,11 +39,11 @@
     \SOLUTION{
       \p
       با توجه به برقرار بودن شرط حکم قسمت دوم همین سوال، از آن استفاده می‌کنیم:
-        $$\sum\limits_{k=0}^{2n} \binom{2n}{k} (-1)^k = 0$$
-        $$\sum\limits_{k=0}^{n} \binom{2n}{2k} (-1)^k + \sum\limits_{k=1}^{n} \binom{2n}{2k-1} (-1)^k = 0$$
-        $$\sum\limits_{k=0}^{n} \binom{2n}{2k} + \sum\limits_{k=1}^{n} \binom{2n}{2k-1} (-1) = 0$$
-        $$\sum\limits_{k=0}^{n} \binom{2n}{2k} - \sum\limits_{k=1}^{n} \binom{2n}{2k-1} = 0$$
-        $$\sum\limits_{k=0}^{n} \binom{2n}{2k} = \sum\limits_{k=1}^{n} \binom{2n}{2k-1}$$
+        \begin{align*}
+          \sum\limits_{k=0}^{2n} \binom{2n}{k} (-1)^k &= 0\\
+          \underbrace{\sum\limits_{k=0}^{n} \binom{2n}{2k}}_{\text{زوج}} \underbrace{- \sum\limits_{k=1}^{n} \binom{2n}{2k-1}}_{\text{فرد}} &= 0\\
+          \sum\limits_{k=0}^{n} \binom{2n}{2k} &= \sum\limits_{k=1}^{n} \binom{2n}{2k-1}            
+        \end{align*}
     }
 
     \item 
@@ -50,7 +54,9 @@
 
     \SOLUTION[\REF{R} پاسخ]{
       \p
-      با توجه به برقرار بودن شرط قضیه ضرایب دوجمله‌ای، از آن استفاده می‌کنیم:
+      با توجه به برقرار بودن شرط 
+      \CROSSREF[قضیه ضرایب دو جمله‌ای]{قضیه ضرایب دوجمله‌ای برای اعداد صحیح}
+      ، از آن استفاده می‌کنیم:
         $$3^n = (1+2)^n = \sum\limits_{k=0}^n \binom{n}{k} 1^{n-k} 2^k = \sum\limits_{k=0}^n \binom{n}{k} 2^k$$
     }
 
